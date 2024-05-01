@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;
+    500&family=Montserrat:wght@200;400&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css" />
+    
+    <title>LDH PORTFOLIO PAGE</title>
+  </head>
+  <body>
+    <!--
+      HEADER 
+      --->
+
+    <header class="header">
+      <div class="logo">
+        <a href="#" class="logo"><i class="fas fa-laptop"></i>LDH</a>
+        <p>
+          Software Development <br />
+          Center
+        </p>
+      </div>
+
+      <nav class="nav-bar">
+        <a href="#Home" class="active">Home</a>
+        <a href="#About">About</a>
+        <a href="#Mission">Mission</a>
+        <a href="#Employee">Employee</a>
+        <a href="#Our-team">Our-team</a>
+        <a href="#News">News</a>
+      </nav>
+
+      <button
+        class="nav-toggle-btn"
+        aria-label="Toogle nav"
+        data-nav-toggle-btn
+      >
+        <i class="fas fa-bars" id="menu-bar"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+      </button>
+    </header>
+
+    <!--
+      SEARCH
+      --->
+    <form action="" id="search-form">
+      <input type="search" placeholder="Search..." id="search-box" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <main>
+      <article>
+        <!--
+      Home
+         --->
+
+        <section class="Home" id="Home">
+          <div class="container">
+            <div class="wrapper">
+              <p class="header-text ">
+                Be part of a premier <br />team focused on providing the
+                <br />best websites and designs.
+              </p>
+
+              <p class="header-subtext">
+                At Lizzy Dev Hub you can get the best of services at affordable
+                rates.
+              </p>
+
+              <button class="btn btn-primary" id="join-our-team"> JOIN OUR TEAM</button>
+               
+              <div class="popup-box">
+
+                <div class="popup" id="popup1">
+
+                  <div class="popup-content">
+                    <div class="close-btn"> <i class="fas fa-times "></i></div>
+                     
+                      <form action="#" id="form">
+  
+  
+                        <div class="input-field">
+                          <label for="">Email</label>
+                          <input type="Email" class="validate" id="Email" required>
+                        </div>
+                      
+                        <div class="input-field">
+                          <label for="">Set Password</label>
+                          <input type="password" class="validate" id="password" required>
+                        </div>
+                       
+                        <button class="submit-Btn" value="Submit">Submit</button> 
+  
+                      </form>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!--
+      ABOUT ORGANIZATION
+      --->
+
+        <section class="History" id="About">
+          <div class="container ">
+            <h2 class="h2 section-subtitle">
+              SPA's External Referral Bonus Program
+            </h2>
+
+            <h3 class="h3 section-text">
+              We offer a one-time payment potentially
+              <a href="#" class="about-link">up to $10,000,</a> for employees
+              referred tour by external parties.
+            </h3>
+          </div>
+        </section>
+
+        <!--
+       mISSION
+      --->
+
+        <section class="mission" id="Mission">
+          <div class="container">
+            <div class="container-3">
+              <h2 class="h2 section-subtitle">
+                Our capabilities meet critical missions with a focus on users
+                needs and users objectives
+              </h2>
+
+              <h3 class="h3 section-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+                amet vero porro quisquam modi obcaecati sequi aliquid
+                voluptates, facere voluptatem reprehenderit expedita neque nisi,
+                ea possimus.
+              </h3>
+
+              <h3 class="h3 section-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat totam iure assumenda architecto aliquam eligendi illo
+                dolorum voluptatibus impedit maiores? Facilis asperiores
+                reiciendis repudiandae illo quidem expedita quisquam porro.
+                Molestiae.
+              </h3>
+            </div>
+
+            <div class="mission-list">
+              <ul class="list-group">
+                <li class="list-items">
+                  <div class="icon-image">
+                    <img src="images/capability-icon-Strategies.png" alt="" />
+                  </div>
+
+                  <div class="list-text">
+                    <h3 class="h2 section-subtitle">
+                      Strategic Policy & Program Support
+                    </h3>
+
+                    <h3 class="h3 section-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolores vitae quaerat mollitia, rerum distinctio fugiat
+                      obcaecati culpa non nemo voluptate.
+                    </h3>
+
+                    <a href="#" class="list-link"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="list-items">
+                  <div class="icon-image">
+                    <img src="images/capability-icon-Software.png" alt="" />
+                  </div>
+
+                  <div class="list-text">
+                    <h3 class="h2 section-subtitle">
+                      Strategic Policy & Program Support
+                    </h3>
+
+                    <h3 class="h3 section-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolores vitae quaerat mollitia, rerum distinctio fugiat
+                      obcaecati culpa non nemo voluptate. Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Consequatur, dolor?
+                    </h3>
+                    <a href="#" class="list-link"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="list-items">
+                  <div class="icon-image">
+                    <img src="images/capability-icon-Engineering.png" alt="" />
+                  </div>
+
+                  <div class="list-text">
+                    <h3 class="h2 section-subtitle">
+                      Strategic Policy & Program Support
+                    </h3>
+
+                    <h3 class="h3 section-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolores vitae quaerat mollitia, rerum distinctio fugiat
+                      obcaecati culpa non nemo voluptate.
+                    </h3>
+
+                    <a href="#" class="list-link"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="list-items">
+                  <div class="icon-image">
+                    <img src="images/capability-icon-specialized.png" alt="" />
+                  </div>
+
+                  <div class="list-text">
+                    <h2 class="h2 section-subtitle">
+                      Strategic Policy & Program Support
+                    </h2>
+
+                    <h3 class="h3 section-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolores vitae quaerat mollitia, rerum distinctio fugiat
+                      obcaecati culpa non nemo voluptate.
+                    </h3>
+
+                    <a href="#" class="list-link"
+                      >Learn more <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!--
+      employee
+      --->
+
+        <section class="employee" id="Employee">
+          <div class="container container-slide">
+            <div class="content-wrapper emp-slides">
+              <div>
+                <img
+                  src="/images2/100.jpg"
+                  id="employee-img"
+                  class="emp-img"
+                  alt=""
+                />
+              </div>
+
+              <div class="employee-text">
+                <h4 class="ehead">Employee Spotlight</h4>
+
+                <h2 id="employee-sub" class="h2 section-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora culpa aliquid ratione vero.
+                </h2>
+
+                <h3 id="employee-text" class="h3 section-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit dolor
+                  sit, amet consectetur adipisicing elit. Aliquam, iusto? Ad,
+                  ullam repellendus corporis ipsam consequuntur nam esse modi
+                  iusto, id necessitatibus eum?..
+                </h3>
+              </div>
+            </div>
+
+            <button class="btn-slide prev">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="btn-slide next">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <!--
+        OUR-TEAm
+      --->
+
+        <section class="our-team" id="Our-team">
+          <div class="container team-container">
+            <div class="team-cont">
+              <div class="team-content1">
+                <h3 class="h3 team-h3">Join our team</h3>
+
+                <p class="team-text">Find a career that is right for you</p>
+
+                <button class="btn-team"><a href="#"> JOIN OUR TEAM</a></button>
+              </div>
+
+              <div class="team-content2">
+                <h3 class="h3 team-h3">LDH External Referral Program</h3>
+
+                <p class="team-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime delectus saepe itaque nemo earum rem voluptatibus
+                  tempora animi voluptas in?
+                </p>
+
+                <button class="btn-team">
+                  <a href="#"> SUBMIT A REVIEW</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="team-image">
+              <img
+                src="images/010.jpg"
+                alt="An image of the team"
+                class="t-img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!--
+      NEWS
+      --->
+
+        <section class="news" id="News">
+          <div class="container news-container">
+            <h1 class="news-head h2">News & Insights</h1>
+
+            <ul class="news-content">
+              <li class="card">
+                <div class="news-card">
+                  <figure class="card-banner">
+                    <img src="images/002.jpg" alt="Jany Smith" />
+                  </figure>
+                  <div class="card-content">
+                    <h1>NEWS</h1>
+
+                    <h3 class="h3 section-text">
+                      LDH Announces New Roles for Executive Leaders
+                    </h3>
+
+                    <p>New roles for LDH leadership</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="card">
+                <div class="news-card">
+                  <figure class="card-banner">
+                    <img src="images/011.jpg" width=150" height="150" alt="Jany
+                    Smith" />
+                  </figure>
+                  <div class="card-content">
+                    <h1>NEWS</h1>
+
+                    <h3 class="h3 section-text">
+                      Systems planning and analysis, Inc., Awarded HIRE Vets
+                      Gold
+                    </h3>
+
+                    <p>New roles for LDH leadership</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="card">
+                <div class="news-card">
+                  <figure class="card-banner">
+                    <img
+                      src="images/012.jpg"
+                      width="150"
+                      height="150"
+                      alt="Jany Smith"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h1>NEWS</h1>
+
+                    <h3 class="h3 section-text">
+                      LDH Announces New Roles for Executive Leaders
+                    </h3>
+
+                    <p>New roles for LDH leadership</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn-team"><a href="#">VIEW ALL</a></button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--
+      FOOTER
+      --->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="f-top">
+            <div class="f-left">
+              <h2 class="h2">NewLetter</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequuntur dolor.
+              </p>
+              <form class="footer-form">
+                <input type="text" placeholder="Email" />
+                <label for="email" type="btn">SUBSRIBE</label>
+              </form>
+            </div>
+            <div class="f-right">
+              <ul class="f-links">
+                <li class="f-subhead"><h3>Center</h3></li>
+                <li><a href="#" class="f-list">Home</a></li>
+                <li><a href="#" class="f-list">Contact Us</a></li>
+                <li><a href="#" class="f-list">About Us</a></li>
+                <li><a href="#" class="f-list">Get Started</a></li>
+              </ul>
+
+              <ul class="f-links">
+                <li class="f-subhead"><h3>Account</h3></li>
+                <li><a href="#" class="f-list">Profile</a></li>
+                <li><a href="#" class="f-list">My Account</a></li>
+                <li><a href="#" class="f-list">Join Our Team</a></li>
+              </ul>
+
+              <ul class="f-links">
+                <li class="f-subhead"><h3>Services</h3></li>
+                <li><a href="#" class="f-list">Web Development</a></li>
+                <li><a href="#" class="f-list">Manage Websites</a></li>
+                <li><a href="#" class="f-list">Test designs</a></li>
+                <li><a href="#" class="f-list">Code Reviews</a></li>
+              </ul>
+
+              <ul class="f-links">
+                <li class="f-subhead"><h3>Others</h3></li>
+                <li><a href="#" class="f-list">Our team</a></li>
+                <li><a href="#" class="f-list">Mission</a></li>
+                <li><a href="#" class="f-list">News</a></li>
+                <li><a href="#" class="f-list">Terms and conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="t-bottom">
+            <div class="copyright">&copy;<bold>2023 Oritsemiyemi</bold></div>
+            <div class="socials">
+              <a href="https://facebook.com"
+                ><i class="fab fa-facebook soc-icon"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fab fa-twitter soc-icon"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="fab fa-instagram soc-icon"></i
+              ></a>
+              <a href="https://linkedin.com"
+                ><i class="fab fa-linkedin soc-icon"></i
+              ></a>
+              <a href="https://youtube.com"
+                ><i class="fab fa-youtube soc-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- ionicon link--->
+
+    <script src="script.js"></script>
+
+  
+</html>
