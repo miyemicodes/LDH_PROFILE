@@ -80,37 +80,9 @@
                 rates.
               </p>
 
-              <button class="btn btn-primary" id="join-our-team"> JOIN OUR TEAM</button>
+              <button class="btn btn-primary btn__open-Modal" id="join-our-team"> JOIN OUR TEAM</button>
                
-              <div class="popup-box">
-
-                <div class="popup" id="popup1">
-
-                  <div class="popup-content">
-                    <div class="close-btn"> <i class="fas fa-times "></i></div>
-                     
-                      <form action="#" id="form">
-  
-  
-                        <div class="input-field">
-                          <label for="">Email</label>
-                          <input type="Email" class="validate" id="Email" required>
-                        </div>
-                      
-                        <div class="input-field">
-                          <label for="">Set Password</label>
-                          <input type="password" class="validate" id="password" required>
-                        </div>
-                       
-                        <button class="submit-Btn" value="Submit">Submit</button> 
-  
-                      </form>
-
-                  </div>
-
-                </div>
-
-              </div>
+            
 
             </div>
           </div>
@@ -310,7 +282,7 @@
 
                 <p class="team-text">Find a career that is right for you</p>
 
-                <button class="btn-team"><a href="#"> JOIN OUR TEAM</a></button>
+                <button class="btn btn-team btn__open-Modal"> JOIN OUR TEAM</button>
               </div>
 
               <div class="team-content2">
@@ -322,8 +294,8 @@
                   tempora animi voluptas in?
                 </p>
 
-                <button class="btn-team">
-                  <a href="#"> SUBMIT A REVIEW</a>
+                <button class="btn btn-team">
+                   SUBMIT A REVIEW
                 </button>
               </div>
             </div>
@@ -406,7 +378,10 @@
               </li>
             </ul>
 
-            <button class="btn-team"><a href="#">VIEW ALL</a></button>
+            <div class="btn-view">
+            <button class="btn">VIEW ALL</button>
+
+            </div>
           </div>
         </section>
       </article>
@@ -418,6 +393,7 @@
     <footer>
       <section class="footer">
         <div class="container">
+          
           <div class="f-top">
             <div class="f-left">
               <h2 class="h2">NewLetter</h2>
@@ -463,6 +439,7 @@
               </ul>
             </div>
           </div>
+
           <div class="t-bottom">
             <div class="copyright">&copy;<bold>2023 Oritsemiyemi</bold></div>
             <div class="socials">
@@ -483,10 +460,33 @@
               ></a>
             </div>
           </div>
+
         </div>
       </section>
     </footer>
-    <!-- ionicon link--->
+
+    <div class="popUp hidden">
+      <button class="close-btn"><i class="fas fa-times "></i></button>
+    
+      <h2 class="popup-header">Would you love to join our team ?</h2>
+
+      <form class="popup-form">
+         <div class="input-field">
+          <label for="name">Your Name</label>
+          <input type="name" class="name" required>
+        </div> 
+        <div class="input-field">
+          <label for="Email">Email</label>
+          <input type="Email" class="validate Email" required>
+        </div>
+                      
+        <button class="btn submit-Btn" >SUBMIT</button> 
+
+                                 
+      </form>
+    </div>
+    <div class="pop-Overlay hidden"></div>
+ <!-- ionicon link--->
 
     <script src="script.js"></script>
 
