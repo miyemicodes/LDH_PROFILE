@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.querySelector(".pop-Overlay");
   const emailTag = document.querySelector(".Email");
   const myName = document.querySelector(".name");
+  const submitBtn = document.querySelector(".submit-Btn");
 
   const openModal = function (e) {
     e.preventDefault();
@@ -44,16 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
   closeModalBox.addEventListener("click", closeModal);
   overlay.addEventListener("click", closeModal);
 
-  // jotBtn.addEventListener("click", ()=>{
-  //     //console.log('here jot');
-  //     popupBox.classList.toggle("active");
-  // })
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-  // closeIcon.addEventListener("click", () =>{
-  //     emailTag.value = passwordTag.value = "";
-  //     popupBox.classList.toggle("active");
-  //     console.log("closeIcon",popupBox);
-  // });
+    myName.value && emailTag.value
+      ? alert("successful submission")
+      : alert("Ensure you input a value in both");
+  });
 
   // submitBtn.addEventListener("click", e => {
   //     e.preventDefault();
