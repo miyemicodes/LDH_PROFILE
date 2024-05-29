@@ -430,21 +430,28 @@ header .nav-toggle-btn #menu-bar {
   color: var(--dark-blue);
 }
 
-#Employee .container-slide {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  max-width: 800px;
+ .container-slide {
+  max-width: 80rem;
+  height: 50rem;
+  margin: 0 auto;
   position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
 }
 
-#Employee .content-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  place-items: center;
+.slide {
+  position: absolute;
+  top: 0;
   width: 100%;
-  max-width: 700px;
-  margin: 35px;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
 }
 
 .employee-text {
@@ -821,11 +828,11 @@ header .nav-toggle-btn #menu-bar {
     height: 100vh;
     width: 100%;
   }
-
+/* 
   #Employee .container-slide {
     width: 100%;
     max-width: 700px;
-  }
+  } */
 
   .team-container {
     display: grid;
